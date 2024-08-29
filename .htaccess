@@ -1,0 +1,25 @@
+# This is a configuration option for Apache web server
+Options -Indexes
+
+# The 'Options' directive allows the server administrator to specify various
+# options affecting server operation. The 'Indexes' option enables the server
+# to produce a directory listing when a user requests a directory that does
+# not contain an index file. By setting '-Indexes', we are disabling this feature.
+# This is a security best practice to prevent unauthorized users from viewing
+
+# Enable rewriting
+RewriteEngine On
+
+# Remove .php extension
+# This code block uses mod_rewrite to remove the .php extension from URLs
+
+# Check if the requested filename is not a directory
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Check if the requested filename with .php extension exists as a file
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+# If both conditions are met, rewrite the URL without the .php extension
+RewriteRule ^(.*)$ $1.php [NC,L]
+# The 'NC' flag makes the rule case-insensitive,
+# and the 'L' flag stops processing further rules if this one matches

@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d5d3da;
+}
+
+
+    body {
+        background-image: url('Images/background.jpg'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #f0f0f0;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+    
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    cursor:pointer ;
+}
+@media (max-width: 600px) {}
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.shopping-cart {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+#cart-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+}
+
+
+#cart-list {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+#cart-list img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+#total-cost {
+    font-weight: bold;
+}
+
+#cart-dropdown button {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.shopping-cart:hover #cart-dropdown {
+    display: block;
+}
+
+#cart-items {
+    margin-left: 5px;
+}
+
+#cart-dropdown.hidden {
+    display: none;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    min-height: 100vh;
+}
+
+#login {
+    padding: 20px;
+}
+
+form {
+    max-width: 300px;
+    margin:0 auto;
+}
+
+.product {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#shopping-cart.hidden {
+    display: none;
+}

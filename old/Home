@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelish Building Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+            
+        </body>
+        <header>
+            <h1>Gelish Building Solutions</h1>
+        </header>
+        
+    <nav>
+        
+        <a onclick="scrollToSection('home')">Home</a>
+        <a onclick="scrollToSection('products')">Products</a>
+        <a onclick="scrollToSection('contact')">Contact Us</a>
+        <a onclick="scrollToSection('login')">Login</a>
+        <div class="shopping-cart" onclick="toggleShoppingCart()">
+            <span class="cart-icon">&#128722;</span>
+            <span id="cart-items">0</span>
+        </div>
+        
+    
+</nav>
+
+<section id="home">
+    <h2>Welcome to Gelish Building Solutions</h2>
+    <p>Your one-stop shop for high-quality building materials such as paint, tiles, and nails.</p>
+</section>
+
+        </body>
+</html>
+    

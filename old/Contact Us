@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelish Building Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+        <body>
+            
+            <nav>
+        
+                <a onclick="scrollToSection('home')">Home</a>
+                <a onclick="scrollToSection('products')">Products</a>
+                <a onclick="scrollToSection('about')">About</a>
+                <a onclick="scrollToSection('contact')">Contact Us</a>
+                <a onclick="scrollToSection('login')">Login</a>
+                <div class="shopping-cart" onclick="toggleShoppingCart()">
+                    <span class="cart-icon">&#128722;</span>
+                    <span id="cart-items">0</span>
+                </div>
+                
+            
+        </nav>
+
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>Have questions or need assistance? Reach out to us!</p>
+                <address>
+                    Email: info@gelishbuildingsolutions.com<br>
+                    Phone: +254112810848
+                </address>
+            </section>
+        </body>
+</html>

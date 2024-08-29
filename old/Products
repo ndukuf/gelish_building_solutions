@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelish Building Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+        <body>
+            
+            <nav>
+        
+                <a onclick="scrollToSection('home')">Home</a>
+                <a onclick="scrollToSection('products')">Products</a>
+                <a onclick="scrollToSection('contact')">Contact Us</a>
+                <a onclick="scrollToSection('login')">Login</a>
+                <div class="shopping-cart" onclick="toggleShoppingCart()">
+                    <span class="cart-icon">&#128722;</span>
+                    <span id="cart-items">0</span>
+                </div>
+                
+            
+        </nav>
+        
+        <section id="products">
+            <h2>Our Products</h2>
+    
+            <div class="product">
+                <img src="insert_paint_image_url.jpg" alt="Paint">
+                <h3>Paint</h3>
+                <p>High-quality paint for your walls.</p>
+                <p>$20.00</p>
+                <button onclick="addToCart('Paint', 20)">Add to Cart</button>
+               
+            </div>
+    
+            <div class="product">
+                <img src="insert_tiles_image_url.jpg" alt="Tiles">
+                <h3>Tiles</h3>
+                <p>Beautiful and durable tiles for your floors.</p>
+                <p>$200.00</p>
+                <button onclick="addToCart('Tiles', 30)">Add to Cart</button>
+            </div>
+    
+            <div class="product">
+                <img src="insert_nails_image_url.jpg" alt="Nails">
+                <h3>Nails</h3>
+                <p>Strong and reliable nails for your construction needs.</p>
+                <p>$100.00</p>
+                <button onclick="addToCart('Nails', 5)">Add to Cart</button>
+            </div>
+        </section>
+            
+        </body>
+</html>
